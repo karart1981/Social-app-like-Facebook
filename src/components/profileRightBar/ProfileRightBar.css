@@ -1,0 +1,58 @@
+.profile-rightbar{
+	flex:3.5;
+	padding: 0 20px 0 0;
+}
+.profile-rightbar-heading{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.profile-rightbar-title{
+	font-size: 18px;
+	font-weight: 500;
+}
+.edit-button{
+	border:none;
+	padding: 7px;
+	border-radius: 5px;
+	background-color: #011631;
+	color:#fff;
+	cursor:pointer;
+}
+.profile-rightbar-info{
+	margin-bottom:30px;
+}
+.profile-rightbar-info-item{
+	margin-bottom: 10px;
+}
+.profile-rightbar-info-key{
+	font-weight: 500;
+	margin-right: 20px;
+}
+.profile-rightbar-info-value{
+	font-weight: 300;
+}
+.profile-rightbar-followings{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.profile-rightbar-following{
+	display: flex;
+	flex-direction:column;
+	margin-bottom: 20px;
+	cursor:pointer;
+}
+.profile-rightbar-following-img{
+	width: 100px;
+	height:100px;
+	object-fit: cover;
+	border-radius:5px;
+}
+.profile-rightbar-following-name{
+	align-self: center;
+	margin-top: 5px;
+	font-size: 14px;
+}

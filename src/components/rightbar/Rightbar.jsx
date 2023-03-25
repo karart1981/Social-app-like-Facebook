@@ -1,11 +1,12 @@
 import React from 'react';
 import RightbarHome from "../rightbarhome/RightbarHome";
+import ProfileRightBar from '../profileRightBar/ProfileRightBar';
 import "./Rightbar.css";
-const Rightbar = () => {
+const Rightbar = ({profile}) => {
   return (
 	<div className="rightbar">
 	   <div className="rightbar-wrapper">
-		   <RightbarHome />
+		   {profile? <ProfileRightBar /> : <RightbarHome />}
 	   </div>
 	</div>
   )
