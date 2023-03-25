@@ -1,0 +1,157 @@
+.navbar-container{
+	width:100%;
+	height:50px;
+	background-color: #011631;
+	display:flex;
+	align-items: center;
+	position: sticky;
+	top:0;
+	z-index: 999;
+}
+
+.navbar-left{
+	flex:3;
+}
+.navbar-left .logo{
+	font-size:24px;
+	color:rgb(255, 255, 0);
+	margin-left: 20px;
+	font-weight: 500;
+	cursor:pointer;
+}
+.navbar-center{
+	flex:5;
+}
+
+.search-bar{
+	width: 100%;
+	height:30px;
+	background-color: #fff;
+	border-radius: 30px;
+	border:1px solid #fff;
+	display: flex;
+	align-items: center;
+}
+
+.search-bar .search-icon{
+	font-size: 20px;
+	margin-left: 10px;
+	color:#777;
+	cursor:pointer;
+}
+
+.search-bar .search-input{
+	border:none;
+	width: 90%;
+	height:30px;
+}
+.search-bar .search-input:focus{
+  outline:none;
+}
+
+.navbar-right{
+	flex:4;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #fff;
+}
+.navbar-right .navbar-link{
+	margin-left: 20px;
+	font-size: 18px;
+	cursor:pointer;
+	color:rgb(255, 255, 0);
+}
+.navbar-right .navbar-icons{
+	display: flex;
+	font-size: 20px;
+	gap:10px;
+}
+.navbar-right .navbar-icons .navbar-icon-item{
+	display: flex;
+	margin-right: 15px;
+	position: relative;
+	cursor:pointer;
+}
+.navbar-right .navbar-icons .navbar-icon-badge{
+	width:16px;
+	height: 16px;
+	background-color: rgb(226, 6, 6);
+	position: absolute;
+	font-size: 12px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top:-5px;
+	right:-5px;
+} 
+
+.navbar-img{
+	display: flex;
+	width: 35px;
+	height: 35px;
+	border-radius:50%;
+    border:2px solid #fff;
+	object-fit: cover;
+	cursor:pointer;
+}
+
+/* Responsiveness*/
+
+@media only screen and (max-width:992px){
+	.navbar-container .navbar-left{
+		flex:2;
+	}
+	.navbar-container .navbar-left .logo{
+		font-weight: 500;
+	}
+	.navbar-container .navbar-center{
+		flex:5;
+	}
+	.navbar-container .navbar-center .search-bar{
+		width:95%;
+	}
+	.navbar-container .navbar-center .search-bar .search-input{
+		width:70%;
+	}
+	.navbar-container .navbar-right .navbar-img{
+		margin-right: 20px;
+	}
+
+}
+@media only screen and (max-width:933px){
+	.navbar-center{
+		display: none;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.navbar-container .navbar-left{
+		flex:3;
+	}
+	.navbar-right .navbar-link{
+		display:none;
+	}
+	
+}
+@media only screen and (max-width:576px){
+	.navbar-container{
+		justify-content: space-between;
+	}
+	.navbar-left{
+		flex:1;
+	}
+	.navbar-center{
+		flex:1;
+		display:none;
+	}
+	.navbar-right{
+		flex:1;
+	}
+}
+@media only screen and (max-width:397px){
+	.navbar-left{
+		display: none;
+	}
+}

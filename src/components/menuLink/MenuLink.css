@@ -1,0 +1,55 @@
+.menu-link{
+	display:flex;
+	padding: 10px;
+	align-items: center;
+	font-weight: 500;
+	border-radius:10px;
+	cursor:pointer;
+	transition: ;
+}
+
+.menu-link:hover{
+	background-color: rgba(1,22,49,0.5);
+	color:#fff;
+}
+
+.menu-link-text{
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.menu-link-text-name{
+	font-weight: 700;
+	font-size: 18px;
+}
+::-webkit-scrollbar{
+	width:5px;
+}
+
+::-webkit-scrollbar-track{
+	background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #777;
+}
+
+/* Responsiveness*/
+@media only screen and (max-width:902px){
+	.menu-link{
+		display: block;
+	}
+	.menu-link-text{
+		display: none;
+	}
+	.menu-link-text-name{
+		display: none;
+	}
+	.menu-link:hover{
+		display: block;
+		background-color: #011631;
+		color: #fff;
+	}
+}
+
+
