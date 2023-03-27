@@ -24,6 +24,7 @@
 }
 .share-input{
 	border:none;
+	text-transform: capitalize;
 	background-color: transparent;
 	font-size: 18px;
 	width: 80%;
@@ -31,6 +32,25 @@
 }
 .shareHr{
 	margin: 20px;
+}
+.share-img-container{
+	padding: 0 20px 10px 20px;
+	position:relative;
+}
+.share-img{
+	width:100%;
+	object-fit: contain;
+}
+.share-cancel-img{
+	position:absolute;
+	top:0;
+	right:20px;
+	background-color: #fff;
+	padding: 5px;
+	margin: 5px;
+	border-radius:50%;
+	opacity:0.8;
+	cursor: pointer;
 }
 .share-bottom{
 	display:flex;

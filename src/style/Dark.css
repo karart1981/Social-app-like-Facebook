@@ -1,0 +1,68 @@
+.app.dark{
+	background-color: #111111;
+	color:rgb(156,156,156);
+}
+.app.dark .navbar-container{
+	background-color: #111111;
+	color:rgb(156,156,156);
+	border-bottom: 0.5px solid rgb(156,156,156);
+}
+.app.dark .navbar-container .logo{
+	color:rgb(156,156,156);
+}
+.app.dark .navbar-container .navbar-link{
+	color:rgb(156,156,156);
+}
+.app.dark .navbar-container .search-input{
+	color:#000000;
+}
+.app.dark .sidebar{
+	background-color:#111111;
+	color:rgb(156,156,156);
+}
+.app.dark .sidebar-btn{
+	background-color:rgb(156,156,156);
+	color:#000000;
+}
+.app.dark .sidebar-friend-name{
+	color:rgb(156,156,156);
+}
+.app.dark .feed{
+	background-color:#111111;
+	color:rgb(156,156,156);
+}
+.app.dark .feed .share-input{
+	color: rgb(156,156,156);
+}
+.app.dark .rightbar{
+	background-color:#111111;
+}
+.app.dark .rightbar .rightbar-username{
+	color:rgb(156,156,156);
+}
+.app.dark .edit-button{
+	background-color: rgb(156,156,156);
+	color: #000000;
+}
+.app.dark .edit-bottom .right form input {
+  color: #000000;
+}
+.app.dark .edit-profile .bottom .right form .update-btn{
+	background-color: rgb(156,156,156);
+	color:#000000;
+}
+
+.app.dark .online .rightbar-username{
+	color:rgb(156,156,156);
+}
+.app.dark .menu-link:hover{
+	background-color: rgba(98,97,97,0.3);
+}
+
+.app.dark .right input{
+	color:rgb(156,156,156);
+}
+.app.dark .update-btn{
+	background-color: rgb(156,156,156);
+	color:#000000;
+}

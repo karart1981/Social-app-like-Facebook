@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Share.css";
 import VideoCameraFrontIcon from '@mui/icons-material/VideoCameraFront';
-import { EmojiEmotions, PermMedia } from '@mui/icons-material';
+import { EmojiEmotions, PermMedia, Close } from '@mui/icons-material';
 
 const Share = () => {
+  const [file,setFile] = useState(null);
+
+  const removeImage = () => {
+	setFile(null);
+  };
   return (
 	<div className="share">
 	   <div className="share-wrapper">
@@ -20,6 +25,10 @@ const Share = () => {
 			   />
 		  </div>
 		  <hr className="shareHr" />
+		  {file && <div className="share-img-container">
+			<img src={URL.createObjectURL(file)} alt="" className="share-img"/>
+			<Close className="share-cancel-img" onClick={removeImage} />
+			</div>}
 		  <div className="share-bottom">
 			 <div className="share-options">
 				<div className="share-option">
@@ -29,13 +38,20 @@ const Share = () => {
 					  />
 					<span className="share-option-text">Live Video</span>
 				</div>
-				<div className="share-option">
+				<label htmlFor='file' className="share-option">
 					<PermMedia 
 					  className="share-icon"
 					  style={{color:"#2e0196f1"}}
 					  />
 					<span className="share-option-text">Photo/Video</span>
-				</div>
+					<input 
+					  type="file" 
+					  id="file" 
+					  accept=".png, .jpeg, .jpg" 
+					  style={{display:"none"}}
+					  onChange={(e) => setFile(e.target.files[0])}
+					/>
+				</label>
 				<div className="share-option">
 					<EmojiEmotions 
 					  className="share-icon"

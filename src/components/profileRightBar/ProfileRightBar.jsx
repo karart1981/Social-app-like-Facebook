@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import "./ProfileRightBar.css";
 
 const ProfileRightBar = () => {
@@ -6,7 +7,9 @@ const ProfileRightBar = () => {
 	<div className="profile-rightbar">
 		<div className="profile-rightbar-heading">
 			<span className="profile-rightbar-title">User Information</span>
-			<span className="edit-button">Edit Profile</span>
+			<Link to="/profile/userId/edit" style={{textDecoration:"none"}}>
+			   <span className="edit-button">Edit Profile</span>
+			</Link>
 		</div>
 
 		<div className="profile-rightbar-info">

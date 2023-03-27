@@ -56,3 +56,9 @@
 	margin-top: 5px;
 	font-size: 14px;
 }
+
+@media only screen and (max-width:768px){
+   .profile-rightbar{
+	 display: none;
+   }
+}

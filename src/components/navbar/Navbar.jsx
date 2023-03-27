@@ -4,14 +4,16 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-
+import {Link} from "react-router-dom";
 const Navbar = () => {
   return (
 	<div className="navbar-container">
 		<div className="navbar-left">
-			<span className="logo">
-				Day & Night
-			</span>
+			<Link to="/" style={{textDecoration:"none"}}>
+			   <span className="logo">
+				  Day & Night
+			   </span>
+			</Link>
 		</div>
 		<div className="navbar-center">
 			<div className="search-bar">
@@ -42,7 +44,10 @@ const Navbar = () => {
 				   <span className="navbar-icon-badge">8</span>
 				</div>
 			</div>
-			<img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/780E/production/_103643703_6e1d448c-a23c-4ce3-a4f4-e1a97c11a185.jpg" alt="" className="navbar-img" />
+			<Link to="/profile/userId">
+			   <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/780E/production/_103643703_6e1d448c-a23c-4ce3-a4f4-e1a97c11a185.jpg" alt="" className="navbar-img" />
+			</Link>
+			
 		</div>
 	</div>
   )
