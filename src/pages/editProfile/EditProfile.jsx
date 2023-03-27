@@ -40,24 +40,19 @@ const EditProfile = () => {
 								  <input type="file" id="file" style={{display:"none"}}/>
 							    </div>
 							    <div className="form-input">
-								  <label htmlFor="">Name</label>
-								  <input type="text" placeholder="Charles Aznavour"/>
+								  <input type="text" placeholder="Name:  Charles Aznavour"/>
 							    </div>
 							    <div className="form-input">
-							  	  <label>Email</label>
-								  <input type="email" placeholder="info@charlesaznavour.com"/>
+								  <input type="email" placeholder="Email:  info@charlesaznavour.com"/>
 							    </div>
 							    <div className="form-input">
-								  <label>Phone</label>
-								  <input type="text" placeholder="+(374 10) 000-000"/>
+								  <input type="text" placeholder="Phone:  +(374 10) 000-000"/>
 							    </div>
 							    <div className="form-input">
-								  <label>Address</label>
-								  <input type="text" placeholder="192 Verin Antarain, Yerevan"/>
+								  <input type="text" placeholder="Address:  192 Verin Antarain, Yerevan"/>
 							    </div>
 							    <div className="form-input">
-								  <label>Country</label>
-								  <input type="text" placeholder="Armenia"/>
+								  <input type="text" placeholder="Country:  Armenia"/>
 							    </div>
 							    <button type="submit" className="update-btn">Update Profile</button>
 							</form>

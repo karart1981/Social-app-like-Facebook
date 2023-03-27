@@ -15,7 +15,7 @@ const Login = () => {
 		  <div className="login-right">
 				<div className="login-box">
 					<div className="bottom">
-						<form className="bottom-box">
+						<form className="login-bottom-box">
 							<input 
 							  type="email" 
 							  placeholder="Email" 
@@ -37,7 +37,7 @@ const Login = () => {
 							  </button>
 							  <Link to="/register">
 							     <button 
-							       className="login-register-btn">
+							       className="login-to-register-btn">
 								      Create a new Account
 							     </button>
 							  </Link>

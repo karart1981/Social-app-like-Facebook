@@ -23,6 +23,7 @@
 	object-fit: cover;
 	margin: auto;
 	top:150px;
+	object-fit:cover;
 	border:3px solid #fff;
 }
 .profile-info{
@@ -41,61 +42,57 @@
 	display: flex;
 	flex-direction: column;
 }
-.top{
+.edit-profile-right-bottom .top{
 	-webkit-box-shadow:2px 4px 10px 1px rgba(0,0,0,0.47);
 	box-shadow:2px 4px 10px 1px rgba(201,201,201,0.47);
 	margin: 20px;
 	padding: 10px;
 	display: flex;
 }
-h1{
+.edit-profile-right-bottom .top h1{
 	color: #555;
     font-size: 20px;
 }
-.bottom{
+.edit-profile-right-bottom .bottom{
 	-webkit-box-shadow:2px 4px 10px 1px rgba(0,0,0,0.47);
 	box-shadow:2px 4px 10px 1px rgba(201,201,201,0.47);
 	margin: 20px;
 	padding: 10px;
 	display: flex;
 }
-.left{
+.edit-profile-right-bottom .bottom .left{
 	flex:1;
 }
-.left img{
+.edit-profile-right-bottom .bottom .left img{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 	margin: 40px 0 40px 40px;
 }
-.right{
+.edit-profile-right-bottom .bottom .right{
 	flex:2;
 }
-.right form{
+.edit-profile-right-bottom .bottom .right form{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.form-input{
+.edit-profile-right-bottom .bottom .right form .form-input{
 	width: 70%;
 	margin-top: 10px;
 }
-.form-input label{
-	display: flex;
-	align-items: center;
-	gap:5px;
-}
-.icon{
+.edit-profile-right-bottom .bottom .right form .form-input label .icon{
 	cursor: pointer;
 }
-input{
+.edit-profile-right-bottom .bottom .right form .form-input input{
 	width: 100%;
 	font-size: 18px;
-	padding: 5px;
+	padding: 0 50px;
 	border:none;
+	box-shadow:1px 1px 4px #444;
 	text-transform: capitalize;
 	background-color: transparent;
-	border-bottom: 1px solid #444;
+	border-bottom:1px solid #555;
 	outline:none;
 }
 .update-btn{

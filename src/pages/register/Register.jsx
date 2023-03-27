@@ -20,7 +20,7 @@ const Register = () => {
 						  src="https://toppng.com/uploads/preview/user-account-management-logo-user-icon-11562867145a56rus2zwu.png" 
 						  alt="" 
 						  className="profile-img"
-						/>
+						  />
 						<div className="form-input">
 							<label htmlFor="file">
 							  Image: <DriveFolderUploadOutlined className="icon"/>
